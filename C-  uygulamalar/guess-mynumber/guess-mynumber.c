@@ -6,7 +6,7 @@ printf("---------------------------------2 KISILIK SAYI TUTMA OYUNU-------------
 }
 int main(void)
 {
-	int p1, p2, time,i,tahmin,flag1=0,flag2=0;
+	int p1, p2, time,i,tahmin,flag1=0,flag2=0,d;
 	char user1[90], user2[90];
 	b:
 	baslik();
@@ -66,6 +66,9 @@ int main(void)
 	else printf("%s sayiyi buldu\n",user2);
 	if (flag1==flag2){
 	printf("Berabere kaldiniz\n");
+	printf("bir daha oynamak ister misiniz? eğer istiyorsaniz 1 e basın");
+	scanf("%d",&d);
+	if(d==1)	
 	goto b;
 	}
 	else if (flag1>flag2) printf("%s kazandi\n",user1);
